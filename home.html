@@ -3,35 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MiniMol Portfolio</title>
+  <title>Mini Mol Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
+    <div class="logo">Mini Mol P</div>
+
     <nav>
-      <div class="logo">Mini Mol P</div>
       <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="toggleMenu()">×</span>
+      <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hello I'm  <span>Mini Mol</span>.</h1>
-      <p>I am a Frontend Developer. I specialize in UI/UX, Responsive Web Design, and Web Development.</p>
-      <form>
-        <input type="email" placeholder="Enter your email" required/>
-        <button type="submit">Connect With Me</button>
-      </form>
-    </div>
-    <div class="hero-img">
-      <img src="mini.jpeg" alt="MiniMol Profile" />
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="text">
+        <h1>Hello,I'm <span class="txt">Mini...</span></h1>
+        <p>Frontend Developer | Creative Coder</p>
+        <div class="input-group">
+        <input type="email" placeholder="Email address" required/>
+        <button onclick="myFunction()">Connect With Me</button>
+        </div>
+      </div>
+      <div class="image profile">
+        <img src="mini.jpeg" alt="Profile Image" />
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
