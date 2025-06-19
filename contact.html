@@ -3,39 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MiniMol Portfolio</title>
+  <title>Mini Mol Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
+    <div class="logo">Mini Mol P</div>
+
     <nav>
-      <div class="logo">Mini Mol P</div>
       <ul class="nav-links">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="project.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
     </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="toggleMenu()">×</span>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1><span>Contact Me</span>...</h1>
+   <!-- <section class="contact-container">
+     
+    <div class="contact-box">
+      <h2><span>Contact Me...</span></h2>
+      <p><strong>Name:</strong> Mini Mol P</p>
+      <p><strong>Email:</strong> <a href="mailto:minimol2403@gmail.com">minimol2403@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9488752403</p>
+      <p><strong>Address:</strong> Nagercoil, Kanyakumari, Tamil Nadu.</p>
+    </div>
+
+    
+    <div class="contact-box">
       <form>
-        <div class="contact-info">
-        <p><strong>Name:</strong> Mini Mol P</p>
-        <p><strong>Email:</strong> <a href="mailto:minimol2403@gmail.com">minimol2403@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:9488752403">+91 9488752403</a></p>
-        <p><strong>Address:</strong><br/>Nagercoil,Kanyakumari,Tamil Nadu.</p>
-      </div>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </div>
-    <div class="hero-img">
+
+    
+    <div class="contact-box" >
+      <img src="mini.jpeg" alt="Mini Mol">
+    </div>
+  </section> -->
+
+
+  <section class="hero her">
+    <div class="hero-text text">
+      <h1><span>Contact Me</span>...</h1> 
+      <p><strong>Name:</strong> Mini Mol P</p>
+      <p><strong>Email:</strong> <a href="mailto:minimol2403@gmail.com">minimol2403@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9488752403</p>
+      <p><strong>Address:</strong> Nagercoil, Kanyakumari, Tamil Nadu.</p>
+    </div>
+    <div class="image profile">
       <img src="mini.jpeg" alt="MiniMol Profile" />
     </div>
   </section>
-
   <script src="script.js"></script>
 </body>
 </html>
